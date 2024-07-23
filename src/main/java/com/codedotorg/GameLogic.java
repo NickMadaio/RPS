@@ -1,4 +1,5 @@
 package com.codedotorg;
+import org.tensorflow.SavedModelBundle;
 
 public class GameLogic {
 
@@ -66,4 +67,26 @@ public class GameLogic {
         }
     }
     
+    //access the "saved_model.pb" file
+    public void loadModel() {
+        //initialize the model
+        SavedModelBundle model = null;
+
+        try 
+        {
+            // Load the TensorFlow model
+            model = SavedModelBundle.load("src/main/resources/saved_model.pb", "serve");
+        } catch (Exception e) 
+        {
+            e.printStackTrace();
+        }
+    }
+
+    //use the visual recognition model to get the image and assign the user choice to the image
+    public void getVisualRecognition() {
+        //use the camera input and the visual recognition model to get the image
+        
+    }
+    
+
 }
