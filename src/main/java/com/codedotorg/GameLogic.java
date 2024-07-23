@@ -27,6 +27,7 @@ public class GameLogic {
      * @return a string containing the phrase "Computer chose" followed by the computer's choice.
      */
     public String getComputerChoice() {
+
         return "Computer chose " + computerChoice;
     }
     
@@ -36,6 +37,7 @@ public class GameLogic {
      * @param currentChoice the user's current choice
      */
     public void setUserChoice(String currentChoice) {
+        
         userChoice = currentChoice;
     }
 

@@ -10,7 +10,7 @@ public class App extends Application {
     }
 
     public void start(Stage primaryStage) {
-        RockPaperScissors game = new RockPaperScissors(primaryStage, 300, 250);
+        RockPaperScissors game = new RockPaperScissors(primaryStage, 500, 500);
         game.startGame();
     }
 

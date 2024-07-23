@@ -3,6 +3,7 @@ package com.codedotorg;
 import java.util.Arrays;
 import java.util.List;
 
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -109,9 +110,13 @@ public class RockPaperScissors {
 
         setButtonActions(buttonsList);
 
+        VBox.setMargin(rockButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(paperButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(scissorsButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(playAgainButton, new Insets(10, 0, 0, 0));
+
         return buttonsList;
     }
-
     /**
      * Sets the actions for a list of buttons.
      * If the button text is "Play Again", it resets the game.
